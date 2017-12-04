@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Header from './../components/Header'
-import { yellow } from './../utils/constants'
 
 const HeaderWrapper = styled.div`
   height: 100vh;
@@ -20,15 +19,15 @@ class HeaderContainer extends React.Component {
 
     setTimeout(() => {
       this.setState({showLogo: true})
-    }, 750)
+    }, 500)
 
     setTimeout(() => {
       this.setState({showIcon: true})
-    }, 1250)
+    }, 1500)
 
     setTimeout(() => {
       this.setState({showTitle: true})
-    }, 2500)
+    }, 2250)
   }
 
   render() {

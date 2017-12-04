@@ -38,7 +38,7 @@ class Header extends React.Component {
         <ContentWrapper>
           <LogoWrapper>
 
-            <LogoItem flex={3}>
+            <LogoItem flex={4}>
               <Logo
                 showLogo={this.props.showLogo}
                 showIcon={this.props.showIcon}
