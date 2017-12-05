@@ -2,7 +2,7 @@
   "name": "jstrier",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trier.js.org/",
+  "homepage": "https://creimers.github.io/trier",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "prop-types": "^15.6.0",
