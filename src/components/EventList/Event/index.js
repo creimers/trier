@@ -6,11 +6,11 @@ import DateIcon from './DateIcon'
 import EventDetails from './EventDetails'
 
 const EventWrapper = styled.div`
-  display: flex;
   margin-bottom: 25px;
 `
 
 const Link = styled.a`
+  display: flex;
   color: black;
   text-decoration: none;
 `
@@ -18,19 +18,23 @@ const Link = styled.a`
 
 class Event extends React.Component {
   render() {
-    const {
+    let {
       name,
       local_date,
       link,
       venue
       } = this.props.event 
 
+    if (!venue) {
+      venue = {name: "Still needs a location..."}
+    }
+
     const date = local_date.split('-')
 
     return (
       <EventWrapper>
-        <DateIcon day={date[2]} month={date[1]} year={date[0]} />
         <Link href={link} target="_blank">
+          <DateIcon day={date[2]} month={date[1]} year={date[0]} />
           <EventDetails title={name} venueName={venue.name} />
         </Link>
       </EventWrapper>
