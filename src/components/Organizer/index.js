@@ -3,9 +3,7 @@ import styled from 'styled-components'
 
 import { yellow } from './../../utils/constants'
 
-import Logo from './Logo'
 import ContentWrapper from './../ContentWrapper'
-
 
 const Anchor = styled.a`
   color: black;
