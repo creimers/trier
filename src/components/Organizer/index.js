@@ -11,7 +11,7 @@ class Organizer extends React.Component {
     return (
       <ContentWrapper backgroundColor={yellow} >
         <h2>Organizer</h2>
-        <a href="https://www.superservice-international.com/" target="_blank">
+        <a rel="noopener noreferrer" href="https://www.superservice-international.com/" target="_blank">
           <Logo />
         </a>
       </ContentWrapper>
