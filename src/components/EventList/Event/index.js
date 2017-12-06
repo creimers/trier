@@ -7,7 +7,6 @@ import EventDetails from './EventDetails'
 
 const EventWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
   margin-bottom: 25px;
 `
 
