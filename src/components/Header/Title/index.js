@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const H1 = styled.h1`
-  font-size: 3em;
+  font-size: 8vmin;
   opacity: ${props => props.visible ? 1 : 0 };
   transition: all 1s linear .75s;
   margin: 0;
