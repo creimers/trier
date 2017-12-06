@@ -5,7 +5,7 @@ import { yellow } from './../../utils/constants'
 import ContentWrapper from './../ContentWrapper'
 
 const FooterWrapper = styled.footer`
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@ class Footer extends React.Component {
         <FooterWrapper>
           <Text>Domain via</Text>
           <a rel="noopener noreferrer" href="http://js.org" target="_blank" title="JS.ORG | JavaScript Community">
-            <img src="https://logo.js.org/dark_horz.png" width="75" alt="JS.ORG Logo"/>
+            <img src="https://logo.js.org/dark_horz.png" width="50" alt="JS.ORG Logo"/>
           </a>
         </FooterWrapper>
       </ContentWrapper>

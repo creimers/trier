@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  max-width: ${maxWidth};
+  max-width: ${props => props.maxWidth || maxWidth};
   width: 100%;
   margin-left: 15px;
   margin-right: 15px;
@@ -23,7 +23,7 @@ class ContentWrapper extends React.Component {
   render() {
     return(
       <Wrapper {...this.props}>
-        <Container>
+        <Container {...this.props}>
           {this.props.children}
         </Container>
       </Wrapper>

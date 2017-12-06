@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const H1 = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   opacity: ${props => props.visible ? 1 : 0 };
   transition: all 1s linear .75s;
   margin: 0;
@@ -11,7 +11,11 @@ const H1 = styled.h1`
 class Title extends React.Component {
   render() {
     return (
-      <H1 visible={this.props.visible}>JavaScript <br/> Usergroup <br/> Trier</H1>
+      <H1 visible={this.props.visible}>
+        JavaScript <br/>
+        Usergroup <br/>
+        Trier
+      </H1>
     )
   }
 }
