@@ -21,10 +21,7 @@ class Event extends React.Component {
     const {
       name,
       local_date,
-      local_time,
-      yes_rsvp_count,
       link,
-      description,
       venue
       } = this.props.event 
 
@@ -39,6 +36,10 @@ class Event extends React.Component {
       </EventWrapper>
     )
   }
+}
+
+Event.propTypes = {
+  event: PropTypes.object.isRequired
 }
 
 export default Event;

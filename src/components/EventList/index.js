@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 import ContentWrapper from './../ContentWrapper'
 import Event from './Event'
@@ -8,7 +7,7 @@ import Event from './Event'
 
 class EventList extends React.Component {
   renderContent = () => {
-    const { isLoading, loadingError, events, title } = this.props
+    const { isLoading, loadingError, events } = this.props
     if (isLoading && !loadingError) {
       return <p>Loading events...</p>
     } else if (!isLoading && loadingError) {
@@ -24,7 +23,7 @@ class EventList extends React.Component {
     const { title } = this.props
     return (
       <ContentWrapper>
-        <h2>{this.props.title}</h2>
+        <h2>{title}</h2>
         {this.renderContent()}
       </ContentWrapper>
     )

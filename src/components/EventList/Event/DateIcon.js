@@ -31,4 +31,10 @@ class DateIcon extends React.Component {
   } 
 }
 
+DateIcon.propTypes = {
+  day: PropTypes.string.isRequired,
+  month: PropTypes.string.isRequired,
+  year: PropTypes.string.isRequired
+}
+
 export default DateIcon
