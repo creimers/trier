@@ -9,7 +9,7 @@ class About extends React.Component {
     return (
       <ContentWrapper backgroundColor={yellow} >
         <h2>About</h2>
-        <p>Lorem in vel harum tempore cum? Dicta incidunt rem molestiae ex odio. Commodi quam dolorum dolorem id iusto. Tempore magnam natus natus officia voluptatem perspiciatis, repudiandae consequatur Repellendus blanditiis maxime</p>
+        <p>Trier JS is welcoming everyone in and around Germany's oldest city interested in the programing language JavaScript. We'll try to be a classical software meetup, getting together once a month, ideally listening to a talk, chatting, joking, networking.</p>
       </ContentWrapper>
     )
   }
