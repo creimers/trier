@@ -8,11 +8,11 @@ const DetailsWrapper = styled.div`
 
 const Title = styled.h3`
   margin-top: 0px;
-  font-size: 2em;
+  font-size: 1.5em;
 `
 
 const Location = styled.p`
-  font-size: 1.5em;
+  font-size: 1em;
 `
 
 class EventDetails extends React.Component {
@@ -28,7 +28,7 @@ class EventDetails extends React.Component {
 
 EventDetails.propTypes = {
   title: PropTypes.string.isRequired,
-  venueName: PropTypes.object.isRequired
+  venueName: PropTypes.string.isRequired
 }
 
 export default EventDetails
