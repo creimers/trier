@@ -17,6 +17,7 @@ import Event from './../components/EventList/Event'
 import EventList from './../components/EventList'
 import DateIcon from './../components/EventList/Event/DateIcon'
 
+import Organizer from './../components/Organizer'
 
 storiesOf('Header', module)
   .add('header without icon', () => <Header showIcon={false}></Header>)
@@ -25,6 +26,7 @@ storiesOf('Header', module)
       <Header
         backgroundColor={'#ffffff'}
         showIcon={true}
+        showLogo={true}
         showTitle={false}
       >
       </Header>
@@ -35,6 +37,7 @@ storiesOf('Header', module)
       <Header
         backgroundColor={'#ffffff'}
         showIcon={true}
+        showLogo={true}
         showTitle={true}
       >
       </Header>
@@ -42,8 +45,8 @@ storiesOf('Header', module)
   })
 
 storiesOf('Logo', module)
-  .add('visible icon', () => <Logo showIcon={true} />)
-  .add('Invisible icon', () => <Logo showIcon={false} />)
+  .add('visible icon', () => <Logo showIcon={true} showLogo={true} />)
+  .add('Invisible icon', () => <Logo showIcon={false} showLogo={true} />)
 
 storiesOf('Title', module)
   .add('visible title', () => <Title visible={true} />)
@@ -53,5 +56,9 @@ storiesOf('Events', module)
   .add('event list loaded', () => <EventList events={events} title="Upcoming Events" isLoading={false} loadingError={false}/>)
   .add('event list loading', () => <EventList events={[]} title="Upcoming Events" isLoading={true} loadingError={false}/>)
   .add('event list loading error', () => <EventList events={[]} title="Upcoming Events" isLoading={false} loadingError={true}/>)
+  .add('event list empty', () => <EventList events={[]} title="Upcoming Events" isLoading={false} loadingError={false}/>)
   .add('event item', () => <Event event={events[0]} />)
   .add('date icon', () => <DateIcon day={'01'} month={'12'} year={'2017'} />)
+
+storiesOf('Organizer', module)
+  .add('organizer', () => <Organizer />)

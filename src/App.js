@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 import EventList from './containers/EventList'
 import Header from './containers/Header'
+import Organizer from './components/Organizer'
+import Footer from './components/Footer'
 
-const upcomingEventsUrl = "https://api.meetup.com/PythonTrier/events?photo-host=public&page=20&sig_id=59619842&sig=5c86753ea007f1f1085aead5811592e23c287b5e"
+const upcomingEventsUrl = "https://jstrier.superservice-international.com/"
 
 class App extends Component {
   render() {
@@ -11,6 +13,8 @@ class App extends Component {
       <div>
         <Header />
         <EventList url={upcomingEventsUrl} title="Upcoming Events" />
+        <Organizer />
+        <Footer />
       </div>
     );
   }
