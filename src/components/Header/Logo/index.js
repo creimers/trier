@@ -5,7 +5,7 @@ class Logo extends React.Component {
     const logoOpacity = this.props.showLogo ? 1 : 0;
     const iconOpacity = this.props.showIcon ? 1 : 0;
     return (
-    <div style={{width: '100%', maxWidth: '50vh'}}>
+    <div style={{width: '100%'}}>
       <svg viewBox="0 0 1060 1060" version="1.1"style={{fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: '1.41421'}}>
         <g transform="matrix(1,0,0,1,-180.157,-423.983)">
           <g transform="matrix(1,0,0,1,-315.843,-149.017)">

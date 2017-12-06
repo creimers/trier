@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { yellow } from './../../../utils/constants'
 
-const squareDimension = 100
+const squareDimension = 80
 
 const YellowSquare = styled.div`
   color: ${yellow};

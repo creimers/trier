@@ -35,7 +35,9 @@ class Header extends React.Component {
         <ContentWrapper>
           <LogoWrapper>
 
-            <LogoItem flex={4}>
+            <LogoItem
+              flex={2}
+            >
               <Logo
                 showLogo={this.props.showLogo}
                 showIcon={this.props.showIcon}
@@ -43,7 +45,7 @@ class Header extends React.Component {
             </LogoItem>
 
             <LogoItem
-              flex={this.props.showTitle ? 2 : 0}
+              flex={this.props.showTitle ? 1 : 0}
               alignItems={'flex-start'}
             >
               <Title visible={this.props.showTitle}/>
