@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  background-color: ${props => props.backgroundColor || 'white'}
 `
 
 const Container = styled.div`
@@ -21,7 +22,7 @@ const Container = styled.div`
 class ContentWrapper extends React.Component {
   render() {
     return(
-      <Wrapper>
+      <Wrapper {...this.props}>
         <Container>
           {this.props.children}
         </Container>

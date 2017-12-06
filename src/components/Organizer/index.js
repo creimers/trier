@@ -1,14 +1,15 @@
 import React from 'react'
 
-import Logo from './Logo'
+import { yellow } from './../../utils/constants'
 
+import Logo from './Logo'
 import ContentWrapper from './../ContentWrapper'
 
 
 class Organizer extends React.Component {
   render() {
     return (
-      <ContentWrapper>
+      <ContentWrapper backgroundColor={yellow} >
         <h2>Organizer</h2>
         <a href="https://www.superservice-international.com/">
           <Logo />

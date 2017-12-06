@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import About from './components/About'
 import EventList from './containers/EventList'
 import Header from './containers/Header'
 import Organizer from './components/Organizer'
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <About />
         <EventList url={upcomingEventsUrl} title="Upcoming Events" />
         <Organizer />
         <Footer />

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { yellow } from './../../utils/constants'
+import ContentWrapper from './../ContentWrapper'
 
 const FooterWrapper = styled.footer`
   margin-bottom: 3rem;
@@ -9,8 +11,10 @@ const FooterWrapper = styled.footer`
 class Footer extends React.Component {
   render() {
     return (
-      <FooterWrapper>
-      </FooterWrapper>
+      <ContentWrapper backgroundColor={yellow} >
+        <FooterWrapper>
+        </FooterWrapper>
+      </ContentWrapper>
     )
   }
 }

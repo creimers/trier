@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { yellow } from './../../utils/constants'
+
 import ContentWrapper from './../ContentWrapper'
 import Event from './Event'
 
@@ -22,7 +24,7 @@ class EventList extends React.Component {
   render() {
     const { title } = this.props
     return (
-      <ContentWrapper>
+      <ContentWrapper backgroundColor={yellow} >
         <h2>{title}</h2>
         {this.renderContent()}
       </ContentWrapper>

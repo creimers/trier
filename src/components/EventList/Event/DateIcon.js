@@ -7,7 +7,8 @@ import { yellow } from './../../../utils/constants'
 const squareDimension = 100
 
 const YellowSquare = styled.div`
-  background-color: ${yellow};
+  color: ${yellow};
+  background-color: black;
   height: ${squareDimension}px;
   width: ${squareDimension}px;
   display: flex;
